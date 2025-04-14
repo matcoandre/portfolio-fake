@@ -1,16 +1,20 @@
 :root {
-  --navy: #0a192f;
-  --light-navy: #112240;
+  --black: #0b0b0b;
+  --light-black: #0e0e0e;
   --lightest-navy: #233554;
   --slate: #ccd6f6;
   --white:#e6f1ff;
-  --green: #34d399;
+  --green: #f87171;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--navy);
+  background-color: var(--black);
   color: var(--white);
-  font-family: "Lato", sans-serif;
+  font-family: Inter;
 }
 
 .heading::after {
@@ -21,19 +25,14 @@ body {
   width: 80%;
   height: 2px;
   margin-left: 300px;
-  background-color: var(--lightest-navy);
+  background-color: var(--lightest-black);
 }
 
 .profile-img {
   border-radius: 1rem;
-  filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
   max-height: 200px;
-  border: 2px solid var(--green);
-}
-
-.profile-img:hover {
-  filter: none;
-  border: 2px solid darkgrey;
+  -webkit-box-shadow: 12px 12px 6px 0px rgba(0,0,0,0.48); 
+  box-shadow: 12px 12px 6px 0px rgba(0,0,0,0.48);
 }
 
 .experience-list {
@@ -58,6 +57,6 @@ body {
   color: var(--slate);
 }
 
-.bg-light-navy {
-  background-color: var(--light-navy);
+.bg-light-black {
+  background-color: var(--light-black);
 }

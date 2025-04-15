@@ -7,14 +7,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  </style> 
-  <script
-    src="script.js"
-  ></script>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js"></script>
   <title>Andrea Matcovich • Matco</title>
 </head>
   <body>
@@ -24,7 +19,10 @@
           <div class="flex items-center justify-between h-16">
             <div class="flex items-center">
               <div class="hidden sm:block sm:ml-6">
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 items-center">
+                  <a href="#home" class="px-3 py-2 w-14 text-sm font-bold">
+                    <img src="assets/propic.jpg" class="rounded-full">
+                  </a>
                   <a href="#about" class="color-secondary hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">
                     Chi sono
                   </a>
@@ -46,9 +44,13 @@
               </div>
             </div>
             <div class="absolute right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <!-- YOUR RESUME LINK HERE -->
-              <a target="_blank" href="CV_MatcovichAndrea_02042025.pdf" class="w-full flex items-center justify-center text-sm px-4 py-2 border border-red-400 text-red-400 font-medium rounded-md text-white bg-transparent hover:bg-gray-800">
-                Il mio CV
+              <a target="_blank" href="assets/CV_MatcovichAndrea.pdf" class="w-full flex items-center justify-center text-sm px-4 py-2 border border-red-400 text-red-400 font-medium rounded-md text-white bg-transparent hover:bg-gray-800">
+                CV (pdf)
+              </a>
+            </div>
+            <div class="absolute right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <a target="_blank" href="assets/CV_MatcovichAndrea.png" class="w-full flex items-center justify-center text-sm px-4 py-2 border border-red-400 text-red-400 font-medium rounded-md text-white bg-transparent hover:bg-gray-800">
+                CV (png)
               </a>
             </div>
           </div>
@@ -56,7 +58,7 @@
       </nav>
 
       <main class="lg:relative">
-        <section id="home" class="container mx-auto max-w-7xl w-4/5 pt-8 pb-10 lg:py-24 lg:text-left">
+        <section id="home" class="container mx-auto max-w-7xl w-4/5 pt-8 pb-10 lg:py-24 lg:mt-12 lg:text-left">
           <div class="px-4 sm:px-8 xl:pr-16">
             <p class="text-red-400 py-4 font-semibold">Ciao! Mi chiamo</p>
             <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-5xl">
@@ -95,7 +97,7 @@
           </div>
         </section>
 
-        <section id="about" class="container mx-auto max-w-7xl w-4/5 lg:py-10 lg:text-left">
+        <section id="about" class="container mx-auto max-w-7xl w-4/5 lg:py-10 lg:mt-20 lg:text-left">
           <div class="px-4 sm:px-8 xl:pr-16">
             <h2 class="heading text-2xl font-bold">
               Chi sono
@@ -125,7 +127,7 @@
                   </div>
                   <div class="col-span-1 px-0 md:px-8">
                     <!-- YOUR PROFILE IMAGE -->
-                    <img class="profile-img shadow-xl" src="propic.jpg" alt="Miguel Marques">
+                    <img class="profile-img shadow-xl" src="assets/propic.jpg" alt="Miguel Marques">
                   </div>
                 </div>
               </div>
